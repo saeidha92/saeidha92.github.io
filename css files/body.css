@@ -1,0 +1,17 @@
+:root {
+  --bg: #FAF9F6;
+  --bg-alt: #F1EFE8;
+  --ink: #1F2933;
+  --ink-soft: #52606D;
+  --accent: #3454D1;
+  --accent-warm: #E8A33D;
+  --line: #D8D3C7;
+  --card-shadow: 0 1px 0 rgba(31,41,51,0.04), 0 8px 24px rgba(31,41,51,0.06);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --radius: 10px;
+  --nav-height: 68px;
+}
