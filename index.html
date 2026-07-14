@@ -1,23 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saeid-HA | Home</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css files/body.css" />
+    <link rel="stylesheet" href="css files/head.css" />
+  </head>
+  <body>
     <nav class="site-nav">
-  <div class="container nav-inner">
-    <a href="index.html" class="brand">saeidha.gtihub.io</a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">menu</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" aria-current="page">home</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="skills.html">skills</a></li>
-      <li><a href="projects.html">projects</a></li>
-      <li><a href="contact.html">contact</a></li>
-    </ul>
-  </div>
-</nav>
-</body>
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">saeidha.gtihub.io</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          menu
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">personal portfolio</p>
+          <h1 class="hero-title">Hi, I'm<br />Saeid Hasan Abadi.</h1>
+          <p class="hero-role">Electrical Engineer &amp; Backend Developer</p>
+          <p>
+            I build clean, accessible interfaces and I'm currently sharpening my
+            skills in JavaScript and Python. his site is my digital workbench —
+            a place to show what I'm learning and building.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">View projects</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div>
+          <div class="avatar-frame">
+            <img src="images/photo.jpg" alt="My photo" width="96" height="96" />
+          </div>
+          <div class="terminal" aria-hidden="false">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="terminal-body" id="typedBody">
+              <span class="prompt">$</span>
+              <span class="cmd" id="typedCmd"></span
+              ><span class="caret" id="caret"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="page-header" style="border: none; padding-top: 0">
+        <p class="eyebrow">quick overview</p>
+        <h2>What you'll find here</h2>
+      </div>
+      <div class="skills-layout">
+        <div>
+          <h3>About me</h3>
+          <p>
+            I have a master degree in Electrical Engineering and intrested in
+            programming and web designing.
+          </p>
+          <a href="about.html">Read more →</a>
+        </div>
+        <div>
+          <h3>Projects</h3>
+          <p>
+            A handful of projects I've built, with links straight to the source
+            on GitHub.
+          </p>
+          <a href="projects.html">Browse projects →</a>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Your Name. Built with HTML, CSS &amp; JS.</span>
+        <div class="footer-links">
+          <a href="https://github.com/saeidha92" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a href="saeidha@ymail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
