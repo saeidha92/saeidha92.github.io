@@ -419,3 +419,71 @@ project-grid {
   background: var(--accent);
   display: inline-block;
 }
+
+/* contact */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+}
+@media (max-width: 800px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-list li:first-child {
+  padding-top: 0;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+.field label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+}
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--accent);
+}
+.field-error {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #b8433a;
+  margin-top: 5px;
+  min-height: 1em;
+}
+.form-status {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-top: 10px;
+  min-height: 1.4em;
+  color: #2f8f5b;
+}
