@@ -230,8 +230,6 @@ p {
   box-shadow: var(--card-shadow);
 }
 
-
-
 /* commit part */
 .commit-log {
   list-style: none;
@@ -302,8 +300,62 @@ p {
   font-size: 0.82rem;
   color: var(--ink-soft);
 }
-.footer-links { display: flex; gap: 18px; }
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* skills */
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .skills-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.json-card {
+  background: var(--ink);
+  color: #e8e6df;
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  overflow-x: auto;
+  box-shadow: var(--card-shadow);
+}
+.json-card .k {
+  color: #9fb3c8;
+}
+.json-card .s {
+  color: var(--accent-warm);
+}
+.json-card .n {
+  color: #7fd1ae;
+}
+
+.badge-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-alt);
+  color: var(--ink);
 }

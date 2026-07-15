@@ -99,7 +99,6 @@
   }
 }
 
-
 /* section */
 .page-header {
   padding: 56px 0 24px;
@@ -107,4 +106,6 @@
   margin-bottom: 48px;
 }
 
-section { padding: 0 0 64px; }
+section {
+  padding: 0 0 64px;
+}
