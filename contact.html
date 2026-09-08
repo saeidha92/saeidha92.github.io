@@ -6,7 +6,7 @@
     <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css files/body.css" />
@@ -15,9 +15,19 @@
   <body>
     <nav class="site-nav">
       <div class="container nav-inner">
-        <a href="https://saeidha92.github.io/" class="brand"
-          >saeidha92.<span>github</span>.io</a
-        >
+        <a href="index.html" class="brand" aria-label="Saeid Hasan Abadi — Home">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ff9d3d" />
+                <stop offset="1" stop-color="#4fd6e8" />
+              </linearGradient>
+            </defs>
+            <path d="M16 1.6 L29.2 8.8 V23.2 L16 30.4 L2.8 23.2 V8.8 Z" stroke="url(#brandGrad)" stroke-width="1.6" />
+            <path d="M18 6.5 L9.5 18 H14.5 L13.5 25.5 L22.5 13.5 H17.5 L18 6.5 Z" fill="url(#brandGrad)" />
+          </svg>
+          Saeid Hasan Abadi
+        </a>
         <button
           class="nav-toggle"
           id="navToggle"
@@ -31,13 +41,13 @@
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li class="nav-cta"><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="container page-header">
-      <p class="eyebrow">contact</p>
+      <p class="eyebrow">Contact</p>
       <h1>Let's talk.</h1>
     </div>
 
@@ -46,7 +56,7 @@
         <div>
           <h3>Reach me directly</h3>
           <ul class="contact-list">
-            <li>✉️ <a href="saeidha@ymail.com">saeidha@ymail.com</a></li>
+            <li>✉️ <a href="mailto:saeidha@ymail.com">saeidha@ymail.com</a></li>
             <li>
               🐙
               <a
@@ -59,7 +69,7 @@
             <li>
               💼
               <a
-                href="https://linkedin.com/in/your-saeidha92"
+                href="https://linkedin.com/in/saeidha92"
                 target="_blank"
                 rel="noopener"
                 >linkedin.com/in/saeidha92</a
@@ -105,7 +115,7 @@
           <a href="https://github.com/saeidha92" target="_blank" rel="noopener"
             >GitHub</a
           >
-          <a href="saeidha@ymail.com">Email</a>
+          <a href="mailto:saeidha@ymail.com">Email</a>
         </div>
       </div>
     </footer>

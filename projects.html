@@ -6,7 +6,7 @@
     <title>Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css files/body.css" />
@@ -15,9 +15,19 @@
   <body>
     <nav class="site-nav">
       <div class="container nav-inner">
-        <a href="https://saeidha92.github.io/" class="brand"
-          >saeidha92.<span>github</span>.io</a
-        >
+        <a href="index.html" class="brand" aria-label="Saeid Hasan Abadi — Home">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ff9d3d" />
+                <stop offset="1" stop-color="#4fd6e8" />
+              </linearGradient>
+            </defs>
+            <path d="M16 1.6 L29.2 8.8 V23.2 L16 30.4 L2.8 23.2 V8.8 Z" stroke="url(#brandGrad)" stroke-width="1.6" />
+            <path d="M18 6.5 L9.5 18 H14.5 L13.5 25.5 L22.5 13.5 H17.5 L18 6.5 Z" fill="url(#brandGrad)" />
+          </svg>
+          Saeid Hasan Abadi
+        </a>
         <button
           class="nav-toggle"
           id="navToggle"
@@ -31,20 +41,20 @@
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html" aria-current="page">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="container page-header">
-      <p class="eyebrow">projects</p>
+      <p class="eyebrow">Projects</p>
       <h1>Things I've built.</h1>
     </div>
     <section class="container">
       <div class="project-grid">
         <article class="repo-card">
           <h3 class="repo-name">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="#52606D">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#93a1b0">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
               />
@@ -74,7 +84,7 @@
 
         <article class="repo-card">
           <h3 class="repo-name">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="#52606D">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#93a1b0">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
               />
@@ -106,7 +116,7 @@
 
         <article class="repo-card">
           <h3 class="repo-name">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="#52606D">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#93a1b0">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
               />
@@ -136,7 +146,7 @@
 
         <article class="repo-card">
           <h3 class="repo-name">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="#52606D">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#93a1b0">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
               />
@@ -166,7 +176,7 @@
 
         <article class="repo-card">
           <h3 class="repo-name">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="#52606D">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#93a1b0">
               <path
                 d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.16-.88-1.16-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
               />
@@ -220,7 +230,7 @@
           <a href="https://github.com/saeidha92" target="_blank" rel="noopener"
             >GitHub</a
           >
-          <a href="saeidha@ymail.com">Email</a>
+          <a href="mailto:saeidha@ymail.com">Email</a>
         </div>
       </div>
     </footer>

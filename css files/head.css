@@ -5,9 +5,9 @@
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  background: rgba(250, 249, 246, 0.88);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
+  background: rgba(10, 14, 22, 0.78);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line-soft);
 }
 
 .nav-inner {
@@ -18,47 +18,75 @@
 }
 
 .brand {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.01em;
 }
-.brand span {
-  color: var(--accent);
+.brand-mark {
+  flex-shrink: 0;
+  display: block;
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  align-items: center;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: var(--font-mono);
-  font-size: 0.92rem;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
 }
 
 .nav-links a {
   color: var(--ink-soft);
   position: relative;
-  padding: 4px 2px;
+  padding: 6px 1px;
+  transition: color 0.2s ease;
 }
-.nav-links a::before {
-  content: "// ";
-  opacity: 0.45;
-}
-.nav-links a:hover,
-.nav-links a[aria-current="page"] {
-  color: var(--accent);
-  text-decoration: none;
-}
-.nav-links a[aria-current="page"]::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: -6px;
+  right: 100%;
+  bottom: -4px;
   height: 2px;
-  background: var(--accent-warm);
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transition: right 0.28s ease;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav-links a:hover::after,
+.nav-links a[aria-current="page"]::after {
+  right: 0;
+}
+
+.nav-cta {
+  margin-left: 4px;
+}
+.nav-cta a {
+  padding: 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+}
+.nav-cta a::after {
+  display: none;
+}
+.nav-cta a:hover,
+.nav-cta a[aria-current="page"] {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  background: rgba(79, 214, 232, 0.08);
 }
 
 .nav-toggle {
@@ -68,6 +96,7 @@
   border-radius: 6px;
   padding: 6px 10px;
   font-family: var(--font-mono);
+  color: var(--ink);
   cursor: pointer;
 }
 
@@ -80,7 +109,7 @@
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: var(--bg);
+    background: var(--bg-alt);
     border-bottom: 1px solid var(--line);
     flex-direction: column;
     gap: 0;

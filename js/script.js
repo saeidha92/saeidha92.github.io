@@ -11,12 +11,51 @@ if (navToggle && navLinks) {
 }
 
 
+// Hero circuit parallax (subtle, mouse-driven)
+const circuitBg = document.getElementById('circuitBg');
+const heroFull = document.querySelector('.hero-full');
+
+if (circuitBg && heroFull) {
+  const heroReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!heroReducedMotion) {
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+
+    heroFull.addEventListener('mousemove', (event) => {
+      const rect = heroFull.getBoundingClientRect();
+      const relX = (event.clientX - rect.left) / rect.width - 0.5;
+      const relY = (event.clientY - rect.top) / rect.height - 0.5;
+      targetX = relX * 16;
+      targetY = relY * 16;
+    });
+
+    heroFull.addEventListener('mouseleave', () => {
+      targetX = 0;
+      targetY = 0;
+    });
+
+    function animateParallax() {
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
+      circuitBg.style.transform = `translate(${currentX}px, ${currentY}px)`;
+      requestAnimationFrame(animateParallax);
+    }
+    animateParallax();
+  }
+}
+
+
 // Hero terminal 
 let typedCmd = document.getElementById('typedCmd');
 
 if (typedCmd) {
   const lines = [
-    { cmd: 'whoami', out: 'Saeid Hasan Abadi — Backend Developer & Electrical Engineer.' },
+    { cmd: 'whoami', out: 'Saeid Hasan Abadi — Power Systems Engineer & Full-Stack Developer.' },
+    { cmd: 'cat background.txt', out: 'M.Sc Electrical Power Engineering, PLC experience.' },
+    { cmd: 'cat stack.txt', out: 'Frontend: JavaScript. Backend: Django.' },
     { cmd: 'cat status.txt', out: 'Open to internships and junior roles.' }
   ];
 
